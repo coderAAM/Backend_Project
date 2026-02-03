@@ -1,0 +1,126 @@
+/* Page Background (Facebook style) */
+.create-post-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f0f2f5;
+  padding-top: 40px;
+}
+
+/* Heading */
+.create-post-title {
+  margin-bottom: 15px;
+  color: #050505;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Form Card */
+.create-post-form {
+  background: #ffffff;
+  width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Caption Input (Facebook Rounded Style) */
+.create-post-form input[type="text"] {
+  padding: 14px 16px;
+  border-radius: 25px;
+  border: none;
+  background: #f0f2f5;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.create-post-form input[type="text"]:focus {
+  background: #e4e6eb;
+}
+
+/* File Upload */
+.create-post-form input[type="file"] {
+  padding: 10px;
+  border-radius: 8px;
+  background: #f0f2f5;
+  border: none;
+  cursor: pointer;
+}
+
+/* Facebook Style Button */
+.create-post-form button {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background: #1877f2;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.create-post-form button:hover {
+  background: #166fe5;
+}
+
+/* Mobile Responsive */
+@media (max-width: 550px) {
+  .create-post-form {
+    width: 90%;
+  }
+}
+
+
+.Feed-posts {
+  min-height: 100vh;
+  background: #f0f2f5;
+  padding: 30px;
+  text-align: center;
+}
+
+.Feed-posts h1 {
+  margin-bottom: 20px;
+}
+
+/* Feed container */
+.Feed-container {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Single Post Card */
+.Feed-post-item {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  overflow: hidden;
+  text-align: left;
+}
+
+/* Post Image */
+.Feed-post-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Caption */
+.Feed-post-caption {
+  padding: 12px;
+  font-size: 15px;
+}
+
+/* No Post */
+.Feed-no-posts {
+  color: gray;
+}
+
